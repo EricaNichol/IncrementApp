@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="profile">
+  <head >
+    <title>Thinkific Coding Challenge</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- load fontawesome -->
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="codingbydave">
+      <a href='http://codingbydave.com' target="_blank">CODINGBDAVE</a>
+    </div>
+    <div class="container">
+      <div class="content_container">
+        <h1 class="page-title">  Welcome, {{ user.name }} !</h1>
+          <h3 class="subheader">Your user ID: <b>{{ user.id }}</b></h3>
+              {{#if message}}
+              <div class="message_container">
+                <h4>{{ message }}</h4>
+              </div>
+              {{/if}}
+
+              <div class="number_container">
+                <h1>Thinkific-{{ user.number }}</h1>
+              </div>
+
+
+      <form class="form-item" action="/next/{{ user.id }}/" method="post">
+        <label>Click for next integer</label>
+        <button type="submit" class="btn btn-info btn-sm">Next</button>
+      </form>
+
+      <form class="form-item" action="/update/{{ user.id }}/edit/" method="post">
+        <label> Change your current Number to</label>
+          <input type="text" class="form-control" name="newNumber" value="{{ user.number }}">
+        <button type="submit" class="btn btn-info btn-sm">Set</button>
+      </form>
+
+      <a href="/logout">Logout</a>
+      </div>
+    </div>
+  </body>
+</html>
