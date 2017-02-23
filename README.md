@@ -1,62 +1,57 @@
 # IncrementApp
 
-Thinkific Developer Challenge<br><br>
+Thinkific Developer Challenge
 
-**please visit:<br><br>
+please visit: <a href="http://thinkific.herokuapp.com">thinkific.herokuapp.com</a>
 
-<b><a href="http://thinkific.herokuapp.com">thinkific.herokuapp.com</a></b><br><br>
-
-<b>Instructions:</b><br><br>
+###Instructions:
 
 Please visit thinkific.herokuapp.com
-and sign up for an account. <br><br>
+and sign up for an account. 
 
-<b>Stack:</b><br><br>
+###Stack:
 
 Built on Node Js, Express Js with MongoDB deployed on
-Heruoku.<br><br>
+Heruoku.
 
-<b>Summary:</b><br><br>
+###Summary:
 
 I choose this stack because it is light weight,
 asyncronous and non relational,
-which is suitable for this challenge. <br><br>
+which is suitable for this challenge.
 
 I started with a basic API that gives a token, which
 users can use "Postman" to connect to the API. Below are 
-the routes for this app:<br><br>
+the routes for this app:
 
-GET:<br>
-home:         which is root <br>
-authenticate: which is to authenticate client <br>
-signup:       for signing up<br>
-profile:      the user profile page<br><br>
+#####GET:
+		home:         which is root 
+		authenticate: which is to authenticate client 
+		signup:       for signing up
+		profile:      the user profile page
 
-POST:<br>
-/update/:user_id/edit  : for updating number with new #<br>
-/next/:user_id .       : to get next number<br><br>
+#####POST:
+		/update/:user_id/edit  : for updating number with new No.
+
+		/next/:user_id .       : to get next number<br><br>
 
 The API is secured through password hashing and middleware
 provided by Express.JS<br><br>
 
-<b>Assumptions:</b><br><br>
+###Assumptions:
 
 When a user refreshes, the integer increments by 1, as per the short video clip. Which is why I did coding logic in the POST route.
 
-Since it is deployed on website, I did not provide API key instead, I printed a unique ID demonstrating that a token can be given out to put in the header for Curl or PostMan.<br><br>
+Since it is deployed on website, I did not provide API key instead, I printed a unique ID demonstrating that a token can be given out to put in the header for Curl or PostMan.
 
 If you have any questions don't hesitate to contact me, 
-feedback is greatly appreciated!<br><br><br>
+feedback is greatly appreciated!
 
-Kind regards,<br><br>
+Kind regards,
 
-David<br>
+David
 604-828-8683<br>
 davidlin98@hotmail.com / dave@codingbydave.com / codingbydave.com
-
-
-
-
 
 
 
