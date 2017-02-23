@@ -4,7 +4,7 @@ Thinkific Developer Challenge<br><br>
 
 **please visit:<br><br>
 
-<b>thinkific.herokuapp.com</b><br><br>
+<b><a href="thinkific.herokuapp.com">thinkific.herokuapp.com</a></b><br><br>
 
 <b>Instructions:</b><br><br>
 
