@@ -26,14 +26,14 @@ I started with a basic API that gives a token, which
 users can use "Postman" to connect to the API. Below are 
 the routes for this app:<br><br>
 
-GET:
+GET:<br>
 home:         which is root <br>
 authenticate: which is to authenticate client <br>
 signup:       for signing up<br>
 profile:      the user profile page<br><br>
 
 POST:<br>
-/update/:user_id/edit  : for updating number with new #
+/update/:user_id/edit  : for updating number with new #<br>
 /next/:user_id .       : to get next number<br><br>
 
 The API is secured through password hashing and middleware
