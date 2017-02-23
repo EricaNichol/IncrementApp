@@ -9,8 +9,8 @@ var passport          = require('passport');
 var mongoose          = require('mongoose');
 var morgan            = require('morgan');
 var mongoose          = require('mongoose');
-var flash    = require('connect-flash');
-var session      = require('express-session');
+var flash             = require('connect-flash');
+var session           = require('express-session');
 
 var jwt               = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var config            = require('./config'); // get our config file
