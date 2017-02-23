@@ -67,7 +67,18 @@ body {
   margin-right: 10%;
   float: left; }
   .profile .form-item button {
-    margin-top: 15px; }
+    margin-top: 15px;
+    width: 100%;
+    margin-bottom: 15px; }
+.profile .form-item.last input {
+  width: 65%;
+  float: left;
+  margin-top: 13px; }
+.profile .form-item.last button {
+  margin-top: 15px;
+  width: 30%;
+  margin-bottom: 15px;
+  float: right; }
 .profile .form-item:last-of-type {
   margin-right: 0; }
 

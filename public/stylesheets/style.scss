@@ -73,7 +73,22 @@ body {
         float: left;
           button {
             margin-top: 15px;
+            width: 100%;
+            margin-bottom: 15px;
           }
+      }
+      .form-item.last {
+        input {
+          width: 65%;
+          float: left;
+          margin-top: 13px;
+        }
+        button {
+          margin-top: 15px;
+          width: 30%;
+          margin-bottom: 15px;
+          float: right;
+        }
       }
       .form-item:last-of-type {
         margin-right: 0;

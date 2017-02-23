@@ -9,9 +9,7 @@
     </style>
   </head>
   <body>
-    <div class="codingbydave">
-      <a href='http://codingbydave.com' target="_blank">CODINGBDAVE</a>
-    </div>
+
     <div class="container">
       <div class="content_container">
         <h1 class="page-title">  Welcome, {{ user.name }} !</h1>
@@ -27,19 +25,21 @@
               </div>
 
 
-      <form class="form-item" action="/next/{{ user.id }}/" method="post">
-        <label>Click for next integer</label>
+      <form class="form-item first" action="/next/{{ user.id }}/" method="post">
+        <label>CLICK FOR NEXT ID:</label>
         <button type="submit" class="btn btn-info btn-sm">Next</button>
       </form>
 
-      <form class="form-item" action="/update/{{ user.id }}/edit/" method="post">
-        <label> Change your current number to</label>
+      <form class="form-item last" action="/update/{{ user.id }}/edit/" method="post">
+        <label> CHANGE NUMBER TO:</label>
           <input type="text" class="form-control" name="newNumber" value="{{ user.number }}">
         <button type="submit" class="btn btn-info btn-sm">Set</button>
       </form>
 
       <a href="/logout">Logout</a>
+      <a style="float:right" href='http://codingbydave.com' target="_blank">CodingByDave</a>
       </div>
+
     </div>
   </body>
 </html>
