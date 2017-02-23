@@ -1,51 +1,51 @@
 # IncrementApp
 
-Thinkific Developer Challenge
+Thinkific Developer Challenge<br><br>
 
-**please visit:
+**please visit:<br><br>
 
-thinkific.herokuapp.com
+<b>thinkific.herokuapp.com</b><br><br>
 
-Instructions:
+<b>Instructions:</b><br><br>
 
 Please visit thinkific.herokuapp.com
-and sign up for an account. 
+and sign up for an account. <br><br>
 
-Stack:
+<b>Stack:</b><br><br>
 
 Built on Node Js, Express Js with MongoDB deployed on
-Heruoku.
+Heruoku.<br><br>
 
-Summary:
+<b>Summary:</b><br><br>
 
 I choose this stack because it is light weight,
 asyncronous and non relational,
-which is suitable for this challenge. 
+which is suitable for this challenge. <br><br>
 
 I started with a basic API that gives a token, which
 users can use "Postman" to connect to the API. Below are 
-the routes for this app:
+the routes for this app:<br><br>
 
 GET:
-home:         which is root
-authenticate: which is to authenticate client
-signup:       for signing up
-profile:      the user profile page
+home:         which is root <br>
+authenticate: which is to authenticate client <br>
+signup:       for signing up<br>
+profile:      the user profile page<br><br>
 
-POST:
+POST:<br>
 /update/:user_id/edit  : for updating number with new #
-/next/:user_id .       : to get next number
+/next/:user_id .       : to get next number<br><br>
 
 The API is secured through password hashing and middleware
-provided by Express.JS
+provided by Express.JS<br><br>
 
 If you have any questions don't hesitate to contact me, 
-feedback is greatly appreciated!
+feedback is greatly appreciated!<br><br><br>
 
-Kind regards,
+Kind regards,<br><br>
 
-David
-604-828-8683
+David<br>
+604-828-8683<br>
 davidlin98@hotmail.com / dave@codingbydave.com / codingbydave.com
 
 
