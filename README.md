@@ -39,6 +39,12 @@ POST:<br>
 The API is secured through password hashing and middleware
 provided by Express.JS<br><br>
 
+<b>Assumptions:</b><br><br>
+
+When a user refreshes, the integer increments by 1, as per the short video clip. Which is why I did coding logic in the POST route.
+
+Since it is deployed on website, I did not provide API key instead, I printed a unique ID demonstrating that a token can be given out to put in the header for Curl or PostMan.<br><br>
+
 If you have any questions don't hesitate to contact me, 
 feedback is greatly appreciated!<br><br><br>
 
