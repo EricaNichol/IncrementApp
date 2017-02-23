@@ -151,11 +151,11 @@ router.post('/next/:user_id/', function(req, res) {
 router.post('/update/:user_id/edit/', function(req, res) {
   // res.json({ status: 'hi'})
   var newNumber = req.body.newNumber;
-  
+
   User.findOne({ _id: req.params.user_id }, function(err, user) {
 
     if (req.body.newNumber < 0) {
-      res.render('profile', { message: 'Must be positive',
+      res.render('profile', { message: 'Must be positive integer',
                               'user': user
                             });
     }
