@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html class="profile">
-  <head >
-    <title>Thinkific Coding Challenge</title>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
-    <link rel="stylesheet" href="/stylesheets/style.css"> <!-- load fontawesome -->
-    <style>
-    </style>
-  </head>
-  <body>
+<head >
+  <title>Thinkific Coding Challenge</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+  <link rel="stylesheet" href="/stylesheets/style.css"> <!-- load fontawesome -->
+  <style>
+  </style>
+</head>
+<body>
 
-    <div class="container">
-      <div class="content_container">
-        <h1 class="page-title">  Welcome, {{ user.name }} !</h1>
-          <h3 class="subheader">Your user ID: <b>{{ user.id }}</b></h3>
-              {{#if message}}
-              <div class="message_container">
-                <h4>{{ message }}</h4>
-              </div>
-              {{/if}}
+  <div class="container">
+    <div class="content_container">
+      <h1 class="page-title">  Welcome, {{ user.name }} !</h1>
+      <h3 class="subheader">Your user ID: <b>{{ user.id }}</b></h3>
+      {{#if message}}
+      <div class="message_container">
+        <h4>{{ message }}</h4>
+      </div>
+      {{/if}}
 
-              <div class="number_container">
-                <h1>Thinkific-{{ user.number }}</h1>
-              </div>
+      <div class="number_container">
+        <h1>Thinkific-{{ user.number }}</h1>
+      </div>
 
 
       <form class="form-item first" action="/next/{{ user.id }}/" method="post">
@@ -32,14 +32,21 @@
 
       <form class="form-item last" action="/update/{{ user.id }}/edit/" method="post">
         <label> CHANGE NUMBER TO:</label>
-          <input type="text" class="form-control" name="newNumber" value="{{ user.number }}">
+        <input type="text" class="form-control" name="newNumber" value="{{ user.number }}">
         <button type="submit" class="btn btn-info btn-sm">Set</button>
       </form>
 
       <a href="/logout">Logout</a>
       <a style="float:right" href='http://codingbydave.com' target="_blank">CodingByDave</a>
+
+      <div style="text-align: center; padding-top: 20px; clear:both; display: block;">
+        GitHub:<a href="https://github.com/EricaNichol/IncrementApp" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>  https://github.com/EricaNichol/IncrementApp
+        </a>
       </div>
 
     </div>
-  </body>
+
+  </div>
+</body>
 </html>
