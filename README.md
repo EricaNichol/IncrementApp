@@ -62,7 +62,7 @@ provided by Express.JS
 
 When a user refreshes, the integer increments by 1, as per the short video clip. Which is why I did coding logic in the POST route.
 
-Since it is deployed on website, I did not provide API key instead, I printed a unique ID demonstrating that a token can be given out to put in the header for Curl or PostMan. I really enjoyed this exercise which is why I am going to implement
+Since it is deployed on website, I did not provide API key, instead, I printed an unique ID demonstrating that a token can be given out to put in the header for Curl or PostMan. I really enjoyed this exercise which is why I am going to implement
 facebook authentication when I have free time!
 
 If you have any questions don't hesitate to contact me,
